@@ -1,0 +1,149 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--dark-color);
+}
+.news-letter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.news-letter > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-sec);
+  color: var(--default-color);
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+}
+.news-letter > div > span {
+  font-style: italic;
+}
+
+.news-letter > form {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-letter > form > input,
+.news-letter > form > button {
+  width: fit-content;
+  padding: 0.8rem 2rem;
+  margin-bottom: 0.8rem;
+  background: var(--dark-color);
+  color: var(--default-color);
+  border: 1px solid var(--default-color);
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.news-letter > form > button {
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.news-letter > form > button:hover {
+  background: var(--default-color);
+  color: var(--dark-color);
+}
+.news-letter > div.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.news-letter > div.socials svg {
+  fill: var(--default-color);
+  width: 24px;
+  height: 24px;
+}
+.explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.explore p {
+  font-family: var(--font-sec);
+  line-height: 2.5rem;
+  font-size: 2rem;
+  color: var(--default-color);
+  margin-bottom: 1rem;
+}
+.explore div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.explore div > * {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+.explore > div a {
+  color: var(--default-color);
+  text-decoration: none;
+}
+.gmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gmail p span {
+  font-family: var(--font-pri);
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  color: var(--default-color);
+  text-align: center;
+}
+.gmail p {
+  font-family: var(--font-sec);
+  color: var(--default-color);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.gmail a {
+  font-family: var(--font-pri);
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  color: var(--default-color);
+  text-decoration: none;
+  text-align: center;
+}
