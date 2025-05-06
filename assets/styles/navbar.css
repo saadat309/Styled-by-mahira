@@ -138,33 +138,29 @@ header > a img {
 }
 
 .sidebar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  translate: 100%;
+  position: fixed;
+  inset: 0;
   background-color: var(--pri-color);
   color: var(--default-color);
-  width: 100vw;
-  height: 100vh;
   z-index: 2;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  justify-items: center;
   opacity: 0;
-  transition: opacity var(--animation-timing);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  pointer-events: none;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar {
-  translate: 0;
   opacity: 1;
+  pointer-events: auto;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
   text-align: center;
   opacity: 0;
   transform: translateY(40px);
@@ -174,6 +170,7 @@ header > a img {
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  font-size: 2rem;
 }
 
 .sidebar-nav::-webkit-scrollbar {
@@ -231,4 +228,13 @@ header > a img {
   .hamburger-menu {
     display: none;
   }
+}
+
+nav.desktop-nav a.active,
+nav.sidebar-nav a.active {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 8px;
+  color: inherit;
 }
