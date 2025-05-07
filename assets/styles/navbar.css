@@ -238,3 +238,11 @@ nav.sidebar-nav a.active {
   text-underline-offset: 8px;
   color: inherit;
 }
+.fade-in {
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
